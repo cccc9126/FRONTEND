@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 
+    các thuộc tính của bảng
+    border: độ dày của đường viền
+    th; khi muốn nhấn mạnh nội dung và nội dung căn chính giữa cột
+    cellpadding: khoảng cách giữa nội dung và đường viền
+    callsapcing: khoảng cách giữa các ô
+    colspan: gộp cột
+    rowspan: gộp hàng
+     -->
+    <table border="1">
+        <tr>
+            <td>STT</td>
+            <td bgcolor="Red">Tên</td>
+        </tr>
+        <tr>
+            <td align="center">1</td>
+            <td>Nguyễn Văn A</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Nguyễn Thị B</td>
+        </tr>
+    </table>
+    <table border="1" cellpadding="10" cellspacing="7">
+        <caption>hello hehee</caption>
+        <thead>
+            <tr>
+                <th>STT</th>
+                <th>Tên</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2">1</td>
+                <td> Nguyễn Văn A</td>
+            </tr>
+            <tr>
+                <!-- <td>2</td> -->
+                <td>Nguyễn Thị B</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <td colspan="2"> tổng số sinh viên = 2</td>
+        </tfoot>
+    </table>
+</body>
+
+</html>
