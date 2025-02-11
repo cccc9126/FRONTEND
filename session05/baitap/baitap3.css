@@ -1,0 +1,16 @@
+div{
+    background-color: rgb(235, 233, 233);
+}
+.heading{
+    background-color: rgb(86, 86, 244);
+    color: white;
+}
+.highlight{
+    background-color: white;
+}
+.mid{
+    text-align: center;
+}
+table{
+    width: 1000px;
+}
