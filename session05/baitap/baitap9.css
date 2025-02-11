@@ -1,0 +1,71 @@
+div {
+    width: 600px;
+    background-color: rgb(243, 243, 243)
+}
+
+input {
+    border-radius: 0px;
+
+}
+
+.hihi {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 400px;
+}
+
+.hihi input {
+    border: none;
+    outline: none;
+    padding: 5px;
+    flex: 1;
+}
+
+.hihi span {
+    padding: 5px 10px;
+    background: #f0f0f0;
+    border-right: 1px solid #ccc;
+}
+
+.tag {
+    display: inline;
+}
+
+.hint {
+    display: inline;
+    opacity: 0.5;
+}
+
+.div2 {
+    padding-left: 15px;
+
+    padding-top: 15px;
+    border-top: 1px solid gray;
+    padding-bottom: 15px;
+    border-bottom: 1px solid gray;
+}
+
+.div1 {
+    padding-left: 15px;
+}
+
+.div3 {
+    padding-left: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid gray;
+}
+
+.submit {
+    background-color: rgb(94, 94, 234);
+    border-radius: 10px;
+    width: 470px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 15px;
+    color: white;
+}
+.alo{
+    margin-bottom: 50px;
+}

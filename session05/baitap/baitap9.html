@@ -9,8 +9,9 @@
 <body>
     <div>
         <form action="">
+            <div class="div1">
             <h2>Biling address</h2>
-            <table>
+            <table border="0">
                 <tr>
                     <td><label for="name1">First name</label></td>
                     <td><label for="name2">Last name</label></td>
@@ -19,19 +20,99 @@
                     <td><input type="text" id="name1" size="30px"></td>
                     <td><input type="text" id="name2" size="30px"></td>
                 </tr>
-            </table>
+            
             <tr>
-                <td colspan="2"><label for="username"></label></td>
+                <td colspan="2">
+                    <label for="user">Username</label>
+                </td>
             </tr>
-            <tr></tr>
-            <tr></tr>
-            <tr></tr>
-            <tr></tr>
-            <tr></tr>
-            <tr></tr>
-            <tr></tr>
-            <tr></tr>
-            <tr></tr>
+            <tr>
+                <td colspan="2">
+                    <div class="hihi">
+                        <span>@</span>
+                        <input type="text" id="user" placeholder="User name" size="50">
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="tag" colspan="2"><label for="email">Email <p class="hint">(Optional)</p></label></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="email" placeholder="you@example.com" id="email" size="62">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2"><label for="address">Address</label></td>
+            </tr>
+            <tr>
+                <td colspan="2"> <input type="text" id="address" placeholder="1234 Main St" size="62"></td>
+            </tr>
+            <tr>
+                <td colspan="2"><label class="tag" for="address2"> Address 2 <p class="hint">(Optional)</p></label></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="text"  id="address2" placeholder="Apartment or suite" size="62"></td>
+            </tr>
+            <tr>
+                <td colspan="2"><label for="Country"></label></td>
+            </tr>
+            </table>
+            <table>
+                <tr>
+                    <td><label for="country">Country</label></td>
+                    <td><label for="state">State</label></td>
+                    <td><label for="zip">Zip</label></td>
+                </tr>
+                <tr>
+                    <td>
+                        <select id="">
+                            <option value="" >Choose...</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select name="" id="">
+                            <option value="">Choose...</option>
+                        </select>
+                    </td>
+                    <td><input type="text" name="" id=""></td>
+                </tr>
+            </table>
+            </div>
+            <div class="div2">
+                <input type="checkbox" id="same-address">Shipping address is the same as my billing address <br>
+
+                <input type="checkbox">Save this information for next time
+            </div>
+            <div class="div3">
+            <h2>Payment</h2>
+            <input type="radio" name="1">Credit card
+            <input type="radio" name="1">Debit card
+            <input type="radio" name="1">PayPal
+            <table>
+                <tr>
+                    <td><label for="">Name on card</label></td>
+                    <td><label for="">Credit card number</label></td>
+                </tr>
+                <tr>
+                    <td><input type="text" name="" id="">
+                        <p>Full name as displayed on card</p>
+                    </td>
+                    <td><input class="alo" type="text" name="" id=""></td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <td><label for="">Expiration</label></td>
+                    <td><label for="">CVV</label></td>
+                </tr>
+                <tr>
+                    <td><input type="text" name="" id=""></td>
+                    <td><input type="text" name="" id=""></td>
+                </tr>
+            </table>
+            <input class="submit" type="submit" value="Continue to checkout">
+            </div>
         </form>
     </div>
 </body>
