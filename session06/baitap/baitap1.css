@@ -1,0 +1,39 @@
+.div1{
+    text-align: center;
+    height: 100px;
+    width: 1000px;
+    background-color: rgba(53, 53, 230, 0.769);
+    color: white;
+    
+}
+.div2 {
+    text-align: center;
+    width: 1000px;
+    background-color: white;
+    
+}
+.div3 {
+    align-content: center;
+    width: 1000px;
+    background-color: rgba(217, 214, 214, 0.744);
+    
+}
+img{
+    width: 100px;
+    height: 100px;
+}
+.heading{
+    padding-top: 18px;
+    padding-left: 310px;
+}
+.headingtext{
+    font-size: 30px;
+}
+.mid{
+    margin-left: 200px;
+    width: 580px;
+}
+.textFinal{
+    text-align: center;
+    margin-right: 10px;
+}
