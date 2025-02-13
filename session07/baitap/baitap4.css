@@ -1,0 +1,42 @@
+.big{
+    background-color: #dbdbdb;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.hehe{
+    height: 5px;
+}
+.heading{
+    margin-left: 15px;
+
+}
+h1{
+    border-left: 10px solid orangered;
+    margin-top: 20px;
+    
+}
+.mid{
+    margin-left: 15px;
+    position: relative;
+}
+img{
+    width: 500px;
+}
+.small{
+    width: 450px;
+    position: absolute;
+    bottom: 40px;
+    left: 30px;
+    color: white;
+    font-size: 30px;
+    line-height: 40px;
+   
+}
+.textMid{
+    width: 500px;
+    height: 30px;
+    border-bottom: 1px solid gray;
+}
+.final{
+    margin-left: 15px;
+    padding-bottom: 10px;
+}

@@ -1,0 +1,80 @@
+.big {}
+
+.heading {
+    border-radius: 10px 10px 0 0;
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+    border-top: 1px solid gray;
+    width: 40%;
+    position: relative;
+
+}
+
+h2 {
+    display: inline-block;
+    padding-left: 20px;
+}
+
+table {
+    width: 90%;
+  
+    margin:  10px auto;
+}
+
+.x {
+    display: inline-block;
+    margin: 20px;
+    color: rgb(94, 91, 91);
+    font-size: larger;
+    font-size: 30px;
+    position: absolute;
+
+    right: 10px;
+}
+
+.mid {
+    border: 1px solid gray;
+    width: 40%;
+    position: relative;
+}
+
+.final {
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+    border-bottom: 1px solid gray;
+    width: 40%;
+    position: relative;
+    border-radius: 0 0 10px 10px;
+}
+
+input {
+    border: 1px solid gray;
+    border-radius: 5px;
+    height: 25px;
+    width: 100%;
+}
+
+textarea {
+    border: 1px solid gray;
+    border-radius: 5px;
+    width: 100%;
+    height: 50px;
+
+}
+
+.but1{border: none;
+    border-radius: 5px;
+    height: 30px;
+    margin: 10px;;
+    color: white;
+    background-color:rgb(95, 94, 94) ;
+        margin-left: 60%;
+}
+.but2{
+    border: none;
+        border-radius: 5px;
+        height: 30px;
+        margin: 10px;
+        background-color: rgb(71, 71, 233);
+        color: white;
+}

@@ -1,0 +1,23 @@
+.logo{
+    background-color: rgb(203, 91, 50);
+    width: 30px;
+    border-radius: 50%;
+}
+h1{
+    display: inline-block;
+    margin-left: 10px;
+}
+.big{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 15px;
+}
+.hi{
+    width: 50%;
+}
+.text{
+    width: 50%;
+    color: gray;
+}
+.hii{
+    color:rgb(52, 41, 62);
+}

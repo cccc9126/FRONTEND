@@ -1,0 +1,36 @@
+.big{
+
+}
+.div1{
+    border-radius: 10px 10px 0 0;
+    padding: 15px;
+    border: 0.5px solid #bdbdbd;
+}
+.div2{
+    background-color: rgba(95, 188, 231, 0.722);
+    border: 0.5px solid #bdbdbd;
+    padding: 15px;
+}
+.div3 {
+    border: 0.5px solid #bdbdbd;
+    padding: 15px;
+}
+.div4 {
+    border-radius: 0 0 10px 10px;
+    border: 0.5px solid #bdbdbd;
+    padding: 15px;
+}
+p{
+    display: inline-block;
+    font-family: 'Courier New', Courier, monospace;
+}
+span{
+    color: red;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.texx{
+}
+i{
+    margin-left: 80%;
+    font-size: larger;
+}
