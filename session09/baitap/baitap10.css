@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    vertical-align: middle;
+
+}
+
+.head {
+    background-color: rgb(25, 65, 222);
+    color: white;
+    position: relative;
+    height: 140px;
+}
+
+.head1 {
+    top: 17px;
+    display: inline-block;
+    position: absolute;
+    right: 80px;
+}
+
+h1 {
+    margin-top: 40px;
+    margin-left: 20px;
+    display: inline-block;
+}
+
+.first {
+    color: white;
+}
+
+.link {
+    position: absolute;
+    bottom: 20px;
+}
+
+.hi {
+    position: absolute;
+    bottom: 0;
+    border-radius: 10px 10px 0 0;
+    left: 12px;
+    width: 50px;
+    background-color: white;
+    height: 5px;
+}
+
+a {
+
+    margin: 20px 0 10px 20px;
+    text-decoration: none;
+    color: rgba(205, 218, 245, 0.624);
+}
+
+.head2 {
+    right: 70px;
+    top: 50px;
+    position: absolute;
+    height: 30px;
+    width: 90px;
+    border: 1px solid white;
+    background-color: rgb(25, 65, 222);
+    color: white;
+    border-radius: 6px;
+}
+
+.fa-regular {
+    position: absolute;
+    top: 55px;
+    font-size: 20px;
+    right: 40px;
+}
+
+.mid {
+    background-color: rgb(224, 223, 231);
+    height: 500px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.search1 {
+    box-shadow: ;
+    border-radius: 10px 10px 0 0;;
+    color: rgb(144, 142, 142);
+    position: relative;
+    margin-top: 50px;
+    height: 55px;
+    width: 80%;
+    background-color: rgb(201, 201, 201);
+}
+
+.fa-magnifying-glass {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+span {
+    position: absolute;
+    top: 20px;
+    left: 50px;
+}
+
+.midbut {
+    position: absolute;
+    top: 8px;
+    background-color: rgb(25, 65, 222);
+    border: none;
+    border-radius: 7px;
+    color: white;
+    font-size: 15px;
+    right: 70px;
+    width: 100px;
+    height: 40px;
+}
+
+.fa-rotate-right {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+}
+
+.search2 {
+    box-shadow: 0 1px 1px 1px;
+    border-radius: 0 0 10px 10px;
+    color: rgb(144, 142, 142);
+    font-size: 25px;
+    height: 155px;
+    width: 80%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
