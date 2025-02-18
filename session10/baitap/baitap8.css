@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.head {
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+}
+
+.head1 {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-size: 17px;
+}
+
+span {
+    position: absolute;
+    right: 20px;
+    color: rgb(73, 73, 196);
+}
+.mid{
+    display: flex;
+    gap: 30px;
+}
+.miditem1{
+    width: 800px;
+    margin-top: 30px;
+    position: relative;
+}
+
+.miditem1 img {
+    width: 800px;
+    height: 500px;
+    
+}
+.miditem1 .img{
+    
+}
+
+.miditem1 h1 {
+    width: 750px;
+    background-color: white;
+    position: absolute;
+    top: 435px;
+    left: 20px;
+}
+.miditem1 p{
+    padding-top: 20px;
+    width: 800px;
+    padding-left: 20px;
+}
+.miditem2{
+
+    width: 350px;
+}
+.miditem2 h2{
+    margin: 0 0 20px 0;
+}
+.miditem2 p{
+    border-bottom: 1px solid gray;
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+.miditem2 .finaltext{
+    border: none;
+}
