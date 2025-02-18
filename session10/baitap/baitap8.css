@@ -32,11 +32,13 @@ span {
     right: 20px;
     color: rgb(73, 73, 196);
 }
-.mid{
+
+.mid {
     display: flex;
     gap: 30px;
 }
-.miditem1{
+
+.miditem1 {
     width: 800px;
     margin-top: 30px;
     position: relative;
@@ -45,11 +47,10 @@ span {
 .miditem1 img {
     width: 800px;
     height: 500px;
-    
+
 }
-.miditem1 .img{
-    
-}
+
+
 
 .miditem1 h1 {
     width: 750px;
@@ -58,23 +59,78 @@ span {
     top: 435px;
     left: 20px;
 }
-.miditem1 p{
+
+.miditem1 p {
     padding-top: 20px;
     width: 800px;
     padding-left: 20px;
 }
-.miditem2{
 
+.miditem2 {
+    padding-top: 20px;
     width: 350px;
 }
-.miditem2 h2{
+
+.miditem2 h2 {
     margin: 0 0 20px 0;
 }
-.miditem2 p{
+
+.miditem2 p {
     border-bottom: 1px solid gray;
     margin-top: 20px;
     padding-bottom: 20px;
 }
-.miditem2 .finaltext{
+
+.miditem2 .finaltext {
     border: none;
+}
+
+.miditem3 {
+    padding-top: 20px;
+    position: relative;
+}
+
+.miditem3 .text {
+    background-color: rgb(213, 218, 218);
+    position: relative;
+    padding-bottom: 50px;
+}
+
+.miditem3 .p1 {
+    margin: 15px;
+    font-size: 18px;
+}
+
+.miditem3 p {
+    width: 350px;
+    margin: 0 15px 0 15px;
+}
+
+.miditem3 .text button {
+    color: rgb(29, 29, 236);
+    border: none;
+    background-color: rgb(213, 218, 218);
+    font-size: 15px;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+}
+.miditem3 .mid{
+    margin-left: -1px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: rgb(49, 49, 243);
+}
+.miditem3 input{
+    font-size: 15px;
+    border: none;
+}
+.miditem3 button{
+    width: 80px;
+    height: 25px;
+    background-color: blue;
+    color: white;
+    border: none;
+    position: absolute;
+    right: 0;
 }
