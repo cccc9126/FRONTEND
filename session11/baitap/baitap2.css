@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.header {
+    width: 90%;
+    height: 50px;
+    background-color: aqua;
+}
+
+.mid {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.mid1 {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.mid1 .item {
+    background-color: chocolate;
+    width: 50%;
+    height: 200px;
+}
+.item1 {
+    background-color: red;
+    width: 50%;
+    height: 200px;
+}
+.item2 {
+    background-color: yellow;
+    width: 50%;
+    height: 200px;
+}
+
+.mid2 {
+    width: 100%;
+    height: 50px;
+    background-color: rgb(152, 113, 56);
+}
+
+.footer {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.footer .item{
+    width: 33%;
+    height: 200px;
+    background-color: rgb(71, 52, 168);
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            align-items: center;
+        }
+    
+        .header {
+            width: 90%;
+            height: 50px;
+            background-color: aqua;
+        }
+    
+        .mid {
+            width: 90%;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+    
+        .mid1 {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 10px;
+        }
+    
+        .mid1 .item {
+            background-color: chocolate;
+            width: 100%;
+            height: 200px;
+        }
+    
+        .item1 {
+            background-color: red;
+            width: 100%;
+            height: 200px;
+        }
+    
+        .item2 {
+            background-color: yellow;
+            width: 100%;
+            height: 200px;
+        }
+    
+        .mid2 {
+            width: 100%;
+            height: 50px;
+            background-color: rgb(152, 113, 56);
+        }
+    
+        .footer {
+            width: 90%;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+    
+        .footer .item {
+            width: 100%;
+            height: 200px;
+            background-color: rgb(71, 52, 168);
+     
+        }
+        .footer .item1{
+            width: 0;
+            height: 0;
+        }
+                .footer .item2 {
+                    width: 0;
+                    height: 0;
+                }
+}

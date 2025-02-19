@@ -1,0 +1,206 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+.header{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-between;
+}
+.header .item{
+    width: 49%;
+    height: 100px;
+    background-color: orangered;
+}
+.mid{
+    width: 90%;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+.mid .mid1{
+    width: 100%;
+    height: 300px;
+    background-color: yellow;
+}
+.mid .mid2{
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.mid .mid2 .item{
+    width: 33%;
+    height: 200px;
+    background-color: blue;
+}
+.footer{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+}
+.footer .item{
+    width: 24%;
+    height: 100px;
+    background-color: gray;
+}
+@media screen and (max-width:1200px) {
+    * {
+            margin: 0;
+            padding: 0;
+        }
+    
+        .container {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            align-items: center;
+        }
+    
+        .header {
+            width: 90%;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            align-items: center;
+            
+        }
+    
+        .header .item {
+            width: 100%;
+            height: 100px;
+            background-color: orangered;
+        }
+    
+        .mid {
+            width: 90%;
+            display: flex;
+            gap: 10px;
+            flex-direction: column;
+        }
+    
+        .mid .mid1 {
+            width: 100%;
+            height: 300px;
+            background-color: yellow;
+        }
+    
+        .mid .mid2 {
+            width: 100%;
+    
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+    
+        .mid .mid2 .item {
+            width: 100%;
+            height: 200px;
+            background-color: blue;
+        }
+    
+        .footer {
+            width: 90%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 10px;
+        }
+    
+        .footer .item {
+            width: 49%;
+            height: 100px;
+            background-color: gray;
+        }
+}
+@media screen and (max-width:768px){
+    * {
+            margin: 0;
+            padding: 0;
+        }
+    
+        .container {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            align-items: center;
+        }
+    
+        .header {
+            width: 90%;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            align-items: center;
+    
+        }
+    
+        .header .item {
+            width: 100%;
+            height: 100px;
+            background-color: orangered;
+        }
+    
+        .mid {
+            width: 90%;
+            display: flex;
+            gap: 10px;
+            flex-direction: column;
+        }
+    
+        .mid .mid1 {
+            width: 100%;
+            height: 300px;
+            background-color: yellow;
+        }
+    
+        .mid .mid2 {
+            width: 100%;
+    
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+    
+        .mid .mid2 .item {
+            width: 100%;
+            height: 200px;
+            background-color: blue;
+        }
+    
+        .footer {
+            width: 90%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 10px;
+        }
+    
+        .footer .item {
+            width: 0%;
+            height: 0px;
+            background-color: rgb(61, 17, 17);
+        }
+        .footer .i1{
+            width: 100%;
+                height: 100px;
+                background-color: gray;
+        }
+}
