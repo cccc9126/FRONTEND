@@ -2617,7 +2617,7 @@ textarea.form-control-lg {
     margin-right: 1rem
 }
 
-.btn-check {
+.check {
     position: absolute;
     clip: rect(0, 0, 0, 0);
     pointer-events: none

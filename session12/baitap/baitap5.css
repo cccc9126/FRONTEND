@@ -1,0 +1,10 @@
+.h{
+    background-color: black;
+    color: white;
+}
+h1{
+    text-align: center;
+}
+td{
+    border-right: 1px solid black;
+}
