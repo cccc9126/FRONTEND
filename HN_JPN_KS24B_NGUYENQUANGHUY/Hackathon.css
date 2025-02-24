@@ -1,0 +1,339 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    font-family: "Epilogue", serif;
+    color: #2D2D2D;
+}
+
+.header {
+    position: relative;
+}
+
+.header .selection {
+    width: 100%;
+    height: 80px;
+}
+
+.header .selection p {
+    width: 49px;
+    height: 30px;
+    position: absolute;
+    top: 25px;
+    left: 50px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    color: #2d2d2d;
+}
+
+.header .selection a {
+    text-decoration: none;
+    color: #2d2d2d;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 28px;
+    position: absolute;
+}
+
+.header .selection .a1 {
+    top: 26px;
+    left: 80%;
+}
+
+.header .selection .a2 {
+    top: 26px;
+    left: 86%;
+}
+
+.header .selection .a3 {
+    top: 26px;
+    left: 92%;
+}
+
+.header .content {
+    width: 100%;
+    height: 624px;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.header .content .textImg {
+    width: 90%;
+    height: 424px;
+    display: flex;
+    flex-direction: row;
+    gap: 28px;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.header .content .textImg img {
+    width: 495px;
+    height: 424px;
+}
+
+.header .content .textImg .text {
+    display: flex;
+    flex-direction: column;
+    width: 557px;
+    height: 317px;
+    gap: 40px;
+}
+
+.header .content .textImg .p1 {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.header .content .textImg .p2 {
+    font-weight: 600;
+    font-size: 80px;
+    line-height: 90px;
+}
+
+.header .content .textImg .p3 {
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 27px;
+}
+
+.mid1 {
+    width: 100%;
+    height: 688px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 180px 140px 180px 140px;
+
+}
+
+.mid1 .content {
+    width: 80%;
+    height: 328px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 125px;
+
+}
+
+.mid1 .content img {
+    width: 130px;
+    height: 130px;
+}
+
+.mid1 .content .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 45px;
+}
+
+.mid1 .content .item .p1 {
+    font-weight: 600;
+    font-size: 27px;
+    line-height: 42px;
+    align-items: center;
+}
+
+.mid1 .content .item .p2 {
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 27px;
+   text-align: center;
+    
+}
+
+.mid2 {
+    width: 100%;
+    height: 1100px;
+    padding: 20px 100px 20px 100px;
+    gap: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+}
+
+.mid2 .title {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 42px;
+}
+
+.mid2 .content {
+    width: 90%;
+    height: 900px;
+    display: flex;
+    gap: 60px;
+    flex-direction: column;
+
+}
+
+.mid2 .content img {
+    width: 350px;
+    height: 350px;
+}
+
+.mid2 .content .content1 {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 407px;
+    justify-content: space-between;
+}
+
+.mid2 .content .content2 {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 407px;
+    justify-content: space-between;
+}
+
+.mid2 .content .p1 {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.mid2 .content .p2 {
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 27px;
+    color: #2d2d2d;
+}
+
+.footer {
+    position: relative;
+    width: 100%;
+    height: 780px;
+    padding-right: 100px;
+    padding-left: 100px;
+    padding-bottom: 70px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer .boxContent {
+    position: absolute;
+    top: 0;
+    width: 90%;
+    height: 600px;
+
+    padding-top: 70px;
+    gap: 70px;
+    border-top: 2px solid #00000033;
+}
+
+.footer .content {
+    width: 100%;
+    height: 530px;
+    display: flex;
+    flex-direction: row;
+    gap: 220px;
+}
+
+.footer .content .item1 {
+    width: 35%;
+    height: 320px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.footer .content .item1 .smallItem1 {
+    display: flex;
+    gap: 40px;
+    flex-direction: column;
+}
+
+.footer .content .item1 .p1 {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 42px;
+}
+
+.footer .content .item1 .p2 {
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 27px;
+}
+
+.footer .content .item1 .smallItem2 {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    font-size: 25px;
+    margin-left: 5px;
+}
+
+.footer .content .item2 {
+    width: 55%;
+    height: 530px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.footer .content .item2 .smallItem1 {
+    width: 100%;
+    height: 410px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer .content .item2 .smallItem1 input {
+    width: 100%;
+    height: 70px;
+    background-color: #F3F3F3;
+    border: none;
+    padding: 21px 30px 21px 30px;
+}
+
+.footer .content .item2 .smallItem1 .big input {
+    width: 100%;
+    height: 230px;
+    position: relative;
+}
+
+.footer .content .item2 .smallItem1 .big ::placeholder {
+
+    position: absolute;
+    top: 33px;
+    left: 30px;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 24px;
+
+}
+.footer .content .item2 .smallItem1 ::placeholder{
+    font-weight: 400;
+        font-size: 17px;
+        line-height: 24px;
+}
+.footer .content .item2 .smallItem2 button{
+width: 235px;
+height: 80px;
+background-color: #2D2D2D;
+color: white;
+font-weight: 600;
+font-size: 20px;
+line-height: 30px;
+}
