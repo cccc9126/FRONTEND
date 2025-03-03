@@ -2,7 +2,7 @@ let string = prompt("Nhập chuỗi bất kì:");
 let length = string.length;
 let count = 0;
 for(let i=0; i<length; i++){
-    if (string.charAt(i) % 1 == 0) {
+    if (string.charAt(i) % 1 == 0 ) {
         count++;
     }
 }
