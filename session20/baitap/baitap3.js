@@ -5,7 +5,7 @@ for (let i = 0; i < number.length; i++){
         count = 0;
     }
 }
-if (count = 0) {
+if (count == 0) {
     document.write("Số bạn nhập không phải số đối xứng");
 }
 else {
