@@ -2,13 +2,7 @@ let arr = [1, 4, 7, 8, 3, 6];
 let number = +prompt("nhap mot so de kiem tra : ");
 let count = 0;
 for (let index in arr) {
-    if (number == arr[index]) {
-        count++;
-    }
+    number == arr[index]?count++:count;
+    
 }
-if (count == 0) {
-    console.log("sai oi");
-}
-else {
-    console.log("bingo");
-}
+count == 0 ? console.log("sai oi") : console.log("bingo");

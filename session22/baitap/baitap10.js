@@ -12,7 +12,7 @@ while (true) {
 
     switch (choice) {
         case 1:
-            let length = Number(prompt("Nhập độ dài của mảng: "));
+            let length = +prompt("Nhập độ dài của mảng: ");
             arr = new Array(length);
             for (let i = 0; i < length; i++) {
                 arr[i] = prompt(`Nhập giá trị cho phần tử thứ ${i}: `);
