@@ -5,6 +5,4 @@ let evenSum = even.reduce((acc, curr) => acc + curr, 0);
 let oddSum = odd.reduce((acc, curr) => acc + curr, 0);
 
 console.log("totalEven = "+evenSum);
-console.log("totalOdd = "+oddSum);
-
-``
+console.log("totalOdd = " + oddSum);
