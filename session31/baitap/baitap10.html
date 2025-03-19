@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            border-collapse:collapse;
+            width: 500px;
+        }
+        .employees td{
+            height: 30px;
+        }
+        .employees th{
+            background-color: rgb(176, 173, 173);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Danh sách nhân viên Rikkei</h1>
+        <table class="table1" border="1px" >
+            <tr>
+                <td>
+                    <label for="">Tên nhân viên: </label>
+                    <input class="name" type="text">
+                </td>
+                <td>
+                    <label for="">Chức vụ</label>
+                    <input class="position" type="text">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <button onclick="add()">Thêm nhân viên</button>
+                </td>
+            </tr>
+        </table>
+        <table class="employees" border="1">
+            <tr>
+                <th>STT</th>
+                <th>Tên</th>
+                <th>Chức Vụ</th>
+            </tr>
+          
+        </table>
+        <table>
+            <tr>
+                <td align="center">
+                    <button class="item1">Previous</button>
+                    <button class="item2">1</button>
+                    <button class="item3">2</button>
+                    <button class="item4">3</button>
+                    <button class="item5">4</button>
+                    <button class="item6">Next</button>
+                </td>
+            </tr>
+        </table>
+        <script>
+    function add() {
+        let name = document.querySelector(".name").value.trim();
+        let position = document.querySelector(".position").value.trim();
+        
+        if (name === "" || position === "") {
+            alert("Vui lòng nhập đầy đủ thông tin!");
+            return;
+        }
+
+        let table = document.querySelector(".employees");
+        
+        let rowCount = table.rows.length;
+        console.log(table.rows.length);
+         let newRow = document.createElement("tr");
+        let cell1 = document.createElement("td");
+        let cell2 = document.createElement("td");
+        let cell3 = document.createElement("td");
+
+        cell1.textContent = rowCount;
+        cell2.textContent = name;
+        cell3.textContent = position;
+
+        newRow.appendChild(cell1);
+        newRow.appendChild(cell2);
+        newRow.appendChild(cell3);
+        table.appendChild(newRow);
+
+
+        document.querySelector(".name").value = "";
+        document.querySelector(".position").value = "";
+    }
+</script>
+
+</body>
+</html>

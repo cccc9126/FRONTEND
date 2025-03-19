@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="baitap1.css">
+    
+</head>
+<body>
+    <p class="hi">This is a text</p>
+    <button class="hide" onclick="h()">Hide</button>
+    <button class="show" onclick="s()">Show</button>
+    <script >
+        function h() {
+  let element = document.getElementsByTagName("p");
+  element[0].classList.add("hi");
+}
+function s() {
+  let element = document.getElementsByTagName("p");
+  element[0].classList.remove("hi");
+}
+
+    </script>
+</body>
+</html>

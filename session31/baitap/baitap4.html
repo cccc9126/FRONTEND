@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .area {
+        position: relative;
+        width: 310px;
+        display: inline-block;
+      }
+      .text {
+        width: 300px;
+        padding-bottom: 60px;
+      }
+      .x {
+        border: none;
+        border-radius: 50%;
+        background-color: white;
+        transform: rotate(45deg);
+        position: absolute;
+        top: 3px;
+        right: 3px;
+      }
+      .container {
+        background-color: gray;
+        height: 300px;
+      }
+      .hi {
+        background-color: gray;
+      }
+      .hide{
+        visibility: hidden;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="">
+      <h1>Modal Exemple</h1>
+      <button onclick="on()" class="">Open Modal</button>
+      <div class="area hide">
+        <input class="text" type="text" placeholder="Some text here" />
+        <button onclick="off()" class="x">+</button>
+      </div>
+    </div>
+    <script>
+      function off() {
+        let item1 = document.getElementsByTagName("div");
+        item1[0].classList.remove("container");
+        let item2 = document.getElementsByTagName("button");
+        item2[0].classList.remove("hi");
+        let item3=document.getElementsByTagName("div");
+        item3[1].classList.add("hide");
+      }
+      function on() {
+        let item3=document.getElementsByTagName("div");
+        item3[1].classList.remove("hide");
+        let item1 = document.getElementsByTagName("div");
+        item1[0].classList.add("container");
+        let item2 = document.getElementsByTagName("button");
+        item2[0].classList.add("hi");
+      }
+    </script>
+  </body>
+</html>
