@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      span {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <button onclick="increase()">Bấm vào tôi</button>
+    <p id="p1">Số lần bấm</p>
+    <span id="span1">0</span>
+  
+    <script>
+      function increase() {
+        
+        let count=document.getElementById("span1");
+        let temp=count.innerHTML;
+        Number(temp)+1
+        console.log(Number(temp)+1);        
+        let item = document.getElementById("p1");
+        item.innerHTML = `Số lần bấm : ${count.innerHTML}`;
+        console.log(item.innerHTML);
+        count.innerHTML=Number(temp)+1;
+        console.log(count.innerHTML);
+
+    
+      }
+    </script>
+  </body>
+</html>

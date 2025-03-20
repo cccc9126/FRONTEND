@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="input" type="text" placeholder="Nhập môn học">
+    <button onclick="add()">Thêm môn học</button>
+    <ol id="hahaa">
+        
+    </ol>
+    <script>
+        function add(){
+            let input=document.getElementById("input").value;
+            let newItem=document.createElement("li");
+            let addItem=document.getElementById("hahaa");
+            newItem.textContent=input;
+            addItem.appendChild(newItem);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .item1 {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        color: white;
+        background-color: green;
+        text-align: center;
+    
+      }
+      .item2 {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        color: white;
+        background-color: red;
+                text-align: center;
+
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <p id="hi">Chữ sẽ thay đổi kích thước khi bấm</p>
+      <button onclick="big()" class="item1">+</button>
+      <button onclick="small()" class="item2">-</button>
+      <script>
+        function big(){
+            let hont=document.getElementById("hi");
+            hont.style.fontSize = "x-large";
+        }
+        function small(){
+            let hont=document.getElementById("hi");
+            hont.style.fontSize = "x-small";
+        }
+      </script>
+    </div>
+  </body>
+</html>

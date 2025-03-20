@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .item1 {
+        display: inline-block;
+        position: relative;
+        width: 200px;
+        height: 100px;
+        border: 1px solid black;
+      }
+      
+      button {
+        position: absolute;
+        top: 5px;
+        left: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div id="i1" class="item1"><button onclick="change()">Đồi màu nền</button></div>
+      <div id="i2" class="item1"><button onclick="change2()">Đổi màu nền</button></div>
+    </div>
+    <script>
+      function change() {
+        let r = Math.floor(Math.random() * 225);
+        let g = Math.floor(Math.random() * 225);
+        let b = Math.floor(Math.random() * 225);
+        let newColor =  r * 0.299 + g * 0.587 + b * 0.114;
+        let item12=document.getElementById("i1");
+        item12.style.backgroundColor=`rgb(${r},${g},${b})`;
+  
+
+      }
+       function change2() {
+        let r = Math.floor(Math.random() * 225);
+        let g = Math.floor(Math.random() * 225);
+        let b = Math.floor(Math.random() * 225);
+        let newColor =  r * 0.299 + g * 0.587 + b * 0.114;
+    
+        let item23=document.getElementById("i2");
+        
+     
+        item23.style.backgroundColor=`rgb(${r},${g},${b})`;
+
+      }
+    </script>
+  </body>
+</html>

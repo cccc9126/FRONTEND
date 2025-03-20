@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        width: 100%;
+        height: 500px;
+        background-color: gray;
+        position: relative;
+      }
+      img {
+        width: 200px;
+        height: 200px;
+      }
+      .item {
+        position: absolute;
+        width: 500px;
+        height: 500px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="in" class="container">
+      <img id="item1" src="/session32/baitap/download.jpeg" alt="" />
+      <img id="item2" src="/session32/baitap/download.jpeg" alt="" />
+      <img id="item3" src="/session32/baitap/download.jpeg" alt="" />
+    </div>
+    <script>
+      let images = document.querySelectorAll("img");
+      images.forEach((img) => {
+        img.onclick = function (event) {
+          images.forEach((img) => img.classList.remove("item"));
+          event.target.classList.add("item");
+        };
+      });
+      window.onclick = function (event) {
+        if (!event.target.closest("img")) {
+          images.forEach((img) => img.classList.remove("item"));
+        }
+      };
+    </script>
+  </body>
+</html>

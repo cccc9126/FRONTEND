@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .load {
+        width: 300px;
+        height: 20px;
+        background-color: gray;
+        border-radius: 10px;
+        margin-bottom: 20px;
+      }
+      .loading {
+        width: 30px;
+        height: 20px;
+        border-radius: 10px;
+        background-color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Progress</h1>
+      <div class="load">
+        <div id="loaddd" class="loading"></div>
+      </div>
+      <button id="increase">Tăng</button>
+      <button id="decrease">Giảm</button>
+    </div>
+    <script>
+      let box = document.getElementById("loaddd");
+      let increase = document.getElementById("increase");
+      let decrease = document.getElementById("decrease");
+
+      increase.onclick = function () {
+            let currentWidth = box.offsetWidth;
+        if (currentWidth < 300) {
+          box.style.width = (currentWidth + 30) + "px";
+        }
+      };
+      decrease.onclick = function () {
+            let currentWidth = box.offsetWidth;
+        if (currentWidth > 0 ) {
+          box.style.width = (currentWidth - 30) + "px";
+        }
+      };
+    </script>
+  </body>
+</html>

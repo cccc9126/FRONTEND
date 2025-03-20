@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      li {
+        height: 40px;
+        position: relative;
+      }
+      ul{
+        list-style-type: none;
+      }
+      .he {
+        width: 15px;
+        height: 15px;
+        background-color: darkorange;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        right: 0;
+        position: absolute;
+      }
+    </style>
+  </head>
+  <body>
+    <input id="input" type="text" placeholder="Nhập môn học" />
+    <button onclick="add()">Thêm môn học</button>
+    <ul id="hahaa"></ul>
+    <script>
+      function add() {
+        let input = document.getElementById("input").value;
+        let newItem = document.createElement("li");
+        let addItem = document.getElementById("hahaa");
+        newItem.textContent = input;
+        addItem.appendChild(newItem);
+
+        let dlt = document.createElement("button");
+        dlt.classList.add("he");
+        dlt.innerHTML = "x";
+        dlt.onclick = function () {
+          newItem.remove();
+        };
+        newItem.appendChild(dlt);
+        document.getElementById("input").value = "";
+      }
+    </script>
+  </body>
+</html>
