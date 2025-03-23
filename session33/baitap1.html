@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <title>Document</title>
+    <style>
+      .container {
+        position: relative;
+      }
+      input {
+        width: 250px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <input id="input" type="password" placeholder="Enter your password" />
+      <span id="show"><i class="fa-solid fa-eye-slash"></i></span>
+    </div>
+    <script>
+      let input = document.getElementById("input");
+      let show = document.getElementById("show");
+      let item = document.getElementsByClassName("fa-solid");
+      let count = 0;
+      show.onclick = function () {
+        item[0].classList.toggle("fa-eye");
+        item[0].classList.toggle("fa-eye-slash");
+        count++;
+        if (count % 2 == 1) {
+          input.setAttribute("type", "text");
+        } else if (count % 2 == 0) {
+          input.setAttribute("type", "password");
+        }
+      };
+    </script>
+  </body>
+</html>
