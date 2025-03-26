@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        width: 100%;
+        height: 1000px;
+        background-color: violet;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        position: relative;
+      }
+      .list {
+        width: 60%;
+        margin-bottom: 300px;
+
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 25px;
+      }
+      .item {
+        width: 500px;
+        height: 200px;
+        background-color: yellow;
+      }
+      h1 {
+        color: white;
+        background-color: rgb(53, 12, 53);
+        width: 400px;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .add {
+        position: absolute;
+        width: 500px;
+        height: 400px;
+      }
+      .head {
+        width: 500px;
+        height: 40px;
+        background-color: violet;
+      }
+      .add .head .title {
+        width: 500px;
+        height: 40px;
+        color: white;
+        margin-left: 10px;
+        margin-right: 300px;
+        display: inline;
+      }
+      .add .head span {
+        color: white;
+        display: inline-block;
+        transform: rotate(45deg);
+        font-size: 24px;
+        font-weight: bold;
+        position: absolute;
+        right: 10px;
+        top: 8px;
+      }
+      .add .body {
+        width: 500px;
+        height: 200px;
+        background-color: rgb(211, 207, 207);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+      label {
+        flex: 1;
+        color: violet;
+        font-size: 20px;
+      }
+      input {
+        flex: 1;
+        border-radius: 5px;
+        border: 1px solid violet;
+        width: 460px;
+        height: 40px;
+      }
+      button {
+        flex: 1;
+
+        width: 90px;
+        height: 30px;
+        background-color: violet;
+        border: none;
+        border-radius: 5px;
+        color: white;
+      }
+      .hide {
+        visibility: hidden;
+      }
+      .item {
+        font-size: 30px;
+        background-color: rgb(53, 12, 53);
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1 onclick="add()" class="title">ADD BOOKMARK</h1>
+      <div id="list" class="list">
+        <!--    <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div> -->
+      </div>
+      <div id="add" class="add hide">
+        <div class="head">
+          <h2 class="title">Add Bookmark</h2>
+          <span onclick="closeDock()">+</span>
+        </div>
+
+        <div class="body">
+          <label for="">Website Name</label><br />
+          <input id="name" type="text" /><br />
+          <label for="">Website URL</label><br />
+          <input id="url" type="text" /><br />
+          <button onclick="save()">Save</button>
+        </div>
+      </div>
+    </div>
+    <script>
+      let arr = JSON.parse(localStorage.getItem("arr")) || [
+        { name: "YouTube", url: "hahaa" },
+      ];
+      function render() {
+        let list = document.getElementById("list");
+        str = "";
+        arr.forEach((item, index) => {
+          str += `
+                <div class="item"> 
+                    <span>${item.name}</span>
+                    <span>${item.url}</span>
+                </div>
+                `;
+        });
+        list.innerHTML = str;
+      }
+      render();
+      function add() {
+        let dock = document.getElementById("add");
+        dock.classList.remove("hide");
+        let name = document.getElementById("name").value;
+        let url = document.getElementById("url").value;
+        let newItem = {
+          name: name,
+          url: url,
+        };
+      }
+      function save() {
+        let name = document.getElementById("name").value;
+        let url = document.getElementById("url").value;
+        let newItem = {
+          name: name,
+          url: url,
+        };
+        arr.push(newItem);
+        let dock = document.getElementById("add");
+        dock.classList.add("hide");
+        
+        render();
+        localStorage.setItem("arr",JSON.stringify(arr));
+      }
+      function closeDock() {
+        let dock = document.getElementById("add");
+        dock.classList.add("hide");
+      }
+    </script>
+  </body>
+</html>
