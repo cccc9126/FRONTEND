@@ -222,27 +222,30 @@
       </div>
     </div>
     <script>
-      let id = localStorage.getItem("id") || "1";
-      function transform() {
-        let item = document.getElementById("item");
-        let items1 = document.querySelectorAll("#item1");
-        let productInfos = document.querySelectorAll(".product-info");
-        let productInfos2 = document.querySelectorAll(".product-card");
-        item.classList.toggle("change1");
-        items1.forEach((el) => el.classList.toggle("change"));
-        productInfos.forEach((el) => el.classList.toggle("change"));
-        productInfos2.forEach((el) => el.classList.toggle("change"));
-        
-        if(id=="1"){
-            id="2";
-            localStorage.setItem("id", id);
-        }else{
-            id="1";
-            localStorage.setItem("id", id);
-        }
-        
-       
-      }
-    </script>
+  
+
+ let id;
+  function applyTheme() {
+    let item = document.getElementById("item");
+    let items1 = document.querySelectorAll("#item1");
+    let productInfos = document.querySelectorAll(".product-info");
+    let productInfos2 = document.querySelectorAll(".product-card");
+
+    let isDarkMode = id === "2";
+
+    item.classList.toggle("change1", isDarkMode);
+    items1.forEach((el) => el.classList.toggle("change", isDarkMode));
+    productInfos.forEach((el) => el.classList.toggle("change", isDarkMode));
+    productInfos2.forEach((el) => el.classList.toggle("change", isDarkMode));
+  }
+
+ 
+  function transform() {
+    id = id === "1" ? "2" : "1"; 
+    localStorage.setItem("id", id); 
+    applyTheme(); 
+  }
+  document.addEventListener("DOMContentLoaded", applyTheme);
+</script>
   </body>
 </html>
