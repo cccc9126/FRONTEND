@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        width: 100%;
+        height: 100vh;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        position: relative;
+      }
+      .item {
+        display: flex;
+      }
+      .left{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      img {
+        width: 200px;
+        height: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Bạn thích món nào nhất</h1>
+      <div class="list">
+        <div class="item">
+          <img
+            src="https://thucphamnhanh.com/wp-content/uploads/2020/03/bun-tuoi-loai-1kg-4.jpg"
+            alt=""
+          />
+          <div class="right"></div>
+          <div class="left">
+            <h1>Bún bò huế</h1>
+            <p id="item1">lượt thích</p>
+            <button onclick="like(1)">Thích +1</button>
+          </div>
+        </div>
+        <div class="item">
+          <img
+            src="https://thucphamnhanh.com/wp-content/uploads/2020/03/bun-tuoi-loai-1kg-4.jpg"
+            alt=""
+          />
+          <div class="right"></div>
+          <div class="left">
+            <h1>Bún bò huế</h1>
+            <p id="item2">lượt thích</p>
+            <button onclick="like(2)">Thích +1</button>
+          </div>
+        </div>
+        <div class="item">
+          <img
+            src="https://thucphamnhanh.com/wp-content/uploads/2020/03/bun-tuoi-loai-1kg-4.jpg"
+            alt=""
+          />
+          <div class="right"></div>
+          <div class="left">
+            <h1>Bún bò huế</h1>
+            <p id="item3">lượt thích</p>
+            <button onclick="like(3)">Thích +1</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+        let arr=JSON.parse(localStorage.getItem("arr"))||[0,0,0];
+        function render(){
+            for(let i=0;i<3;i++){
+                document.getElementById("item"+(i+1)).innerHTML=arr[i]+"Lượt thích";
+            }
+        }
+        render();
+        function like(id){
+            document.getElementById("item"+id).innerHTML=arr[id-1]+1+"Lượt thích";
+            arr[id-1]++;
+            localStorage.setItem("arr",JSON.stringify(arr));
+        }
+    </script>
+  </body>
+</html>
